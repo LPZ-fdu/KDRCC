@@ -1,0 +1,40 @@
+run_module_D_smoke <- function(root,output_root=tempdir()) {
+  source(file.path(root,"00_parameters.R"),encoding="UTF-8",local=TRUE)
+  cfg<-simulation_config(root);cfg$schema<-"module-D-workflow-check-v2";cfg$seed<-91289L
+  cfg$modules<-"B";cfg$B$repetitions<-cfg$D$repetitions<-2L
+  cfg$configuration$overrides$D<-list(N=400L,L=600L,M=12L,kappa=.001,lambda=1)
+  cfg$configuration$overrides$B<-cfg$configuration$overrides$D
+  cfg$D$calibration$reference_groups<-cfg$D$calibration$calibration_groups<-cfg$D$calibration$validation_groups<-3000L
+  cfg$execution$workers<-2L;cfg$execution$block_groups<-200L
+  cfg$execution$progress_seconds<-15;cfg$resources$enabled<-FALSE
+  cfg$evaluation$groups<-1000L;cfg$evaluation$function_points<-40L;cfg$evaluation$coverage_points<-40L
+  cfg$evaluation$quantiles<-c(.1,.25,.5,.75,.9);cfg$selection$evaluation_points<-40L
+  cfg$interpretation$contribution_points<-40L;cfg$interpretation$single_points<-7L
+  cfg$interpretation$interaction_points<-4L;cfg$kernel$penalty_rows<-50L
+  cfg$report$dpi<-72L;cfg$report$font<-"serif"
+  work<-file.path(output_root,"module_D_smoke_v2");dir.create(work,recursive=TRUE,showWarnings=FALSE)
+  baseline<-run_simulation(cfg,work,"B")[[1]]
+  baseline_files<-list.files(file.path(baseline,"fits"),full.names=TRUE)
+  baseline_hash<-tools::md5sum(baseline_files)
+  cfg$modules<-"D";cfg$D$baseline_B_run<-baseline
+  run<-run_simulation(cfg,work,"D")[[1]]
+  x<-sim_collect(run)
+  stopifnot(nrow(x$status)==32L,all(x$status$point_ok),all(x$status$interval_ok),all(x$status$interpretation_ok))
+  kdr_csv(x$status,file.path(work,"workflow_status.csv"))
+  ev0<-readRDS(sim_evaluation_path(run,8L,"D0"));ev3<-readRDS(sim_evaluation_path(run,8L,"DM"))
+  stopifnot(identical(ev0$joint,ev3$joint),identical(ev0$true_joint,ev3$true_joint),
+    identical(ev0$reference,ev3$reference),!identical(ev0$individual,ev3$individual),
+    identical(ev0$interpretation$response$points,ev3$interpretation$response$points))
+  files<-list.files(file.path(run,"fits"),full.names=TRUE)
+  before<-tools::md5sum(files);resumed<-run_simulation(cfg,work,"D")[[1]]
+  stopifnot(identical(run,resumed),identical(before,tools::md5sum(files)))
+  stopifnot(identical(baseline_hash,tools::md5sum(baseline_files)))
+  combined<-sim_D_combine_B(run,x)
+  stopifnot(nrow(combined$status)==48L,sum(combined$status$reused)==16L)
+  prepare_results(run)
+  captions<-read.csv(file.path(run,"analysis","Figure_and_table_captions.csv"),stringsAsFactors=FALSE)
+  stopifnot(!anyDuplicated(captions$id),all(file.exists(file.path(run,"analysis",captions$file))),
+    any(grepl("Figure_D_D0_single_G1",captions$id)),any(grepl("Figure_D_DM_interaction_detection",captions$id)))
+  kdr_log("Module D parallel workflow, cache isolation, common targets, resume and report checks passed.")
+  invisible(run)
+}

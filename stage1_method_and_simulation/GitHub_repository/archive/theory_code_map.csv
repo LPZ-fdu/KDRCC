@@ -1,0 +1,17 @@
+appendix_section,topic,implementation,definition_and_conditions,review
+S4.1–S4.2,Ordered event/reference pairs,R/11_nuisance_design.R,Group-normalized symmetric pair weights; conditional direction odds,verified
+S4.3–S4.5,Base doubly robust moment,R/30_estimation.R,Finite response representation; either correct nuisance; integrability and local identification,verified
+S5.1–S5.4,Gaussian learning and whitening,R/20_kernel.R; R/01_numeric.R,Independent learning sample; positive distance bounds; invertible within-set transform,verified
+S5.5,Mixed-derivative penalty,R/20_kernel.R,Positive-semidefinite derivative outer products; trace normalization,verified
+S6.1–S6.4,Auxiliary fits and cross-fitting,R/30_estimation.R; R/11_nuisance_design.R,Finite-dimensional regression and cell-mean special case; complete matched-set folds,verified
+S7.1–S7.4,Regularized target and solution,R/31_covariance.R,Squared-moment criterion; fixed-penalty population target; damped Gauss–Newton and Armijo search,verified
+S8.1–S8.4,Curvature and covariance,R/31_covariance.R,Exact Hessian; full g/f sensitivities; grouped influence contributions; fixed-dimensional local inference,verified
+S8.5; S9.1–S9.3,"Effects, ORs and contrasts",R/40_evaluation.R; R/41_response_grid.R,Linear contrasts of one fitted response; full coefficient covariance,verified
+S9.4,Interaction inference,R/43_interaction_inference.R,Four-point interaction contrasts; regularized-target zero contrast; centered Gaussian reference,verified
+S9.5–S9.6,Variable participation,R/40_evaluation.R,Derivative working null; covariance-spectrum reference; Holm family; generating-label recognition measured in simulation,verified
+S9.7–S9.8,Contribution allocation,R/42_attribution.R; R/45_interpretation.R,Eight prespecified active exposures in simulation; reference background for remaining coordinates; mean absolute within-set shares,verified
+S10,Simulation mechanism,config/mechanism.R; R/02_calendar.R; R/10_mechanism.R,"Lag windows, response constants, event sampling and null coordinates",verified
+S10.4; S11.5,Correlation scenarios,R/54_D_copula.R,Calibrated overall exposure dependence and saved achieved correlation matrices,verified
+S7.5; S11.6,Independent configuration selection,R/57_E_data.R; R/66_E_execution.R,Grouped held-out conditional negative log likelihood; independent final estimation; truth used for evaluation,verified
+S11.7–S11.9,Simulation measures,R/80_summary.R; R/81_interpretation_summary.R,"Pointwise repetition aggregation; RMS Bias, RMSE, OR errors, uncertainty and recorded availability",verified
+S12,Fixed configuration,config/fixed_parameters.R; archived plans,"A035: N=20000, L=20000, M=144, kappa=0.0001, lambda=1",verified

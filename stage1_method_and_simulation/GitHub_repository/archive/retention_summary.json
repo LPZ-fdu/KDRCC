@@ -1,0 +1,45 @@
+{
+  "original_bytes": 30843596370,
+  "retained_files": 171260,
+  "retained_bytes": 8813017907,
+  "excluded_files": 38215,
+  "excluded_bytes": 22030578463,
+  "by_group": {
+    "config": {
+      "files": 1,
+      "bytes": 387
+    },
+    "results": {
+      "files": 5,
+      "bytes": 110
+    },
+    "module_A_9ed1fac7995a": {
+      "files": 44945,
+      "bytes": 2420835294
+    },
+    "module_B_6fab5de7950a": {
+      "files": 5456,
+      "bytes": 226050799
+    },
+    "module_C_09bb6e6143c2": {
+      "files": 5180,
+      "bytes": 384596590
+    },
+    "module_D_4f38f6e38982": {
+      "files": 12162,
+      "bytes": 666841265
+    },
+    "module_E_247f3007fe44": {
+      "files": 103348,
+      "bytes": 5036358049
+    },
+    "submissions": {
+      "files": 163,
+      "bytes": 78335413
+    }
+  },
+  "archive_format": "Independent ZIP archives; extract all into one parent directory",
+  "runtime_folder": "KDRCC_formal_20261027",
+  "appendix_sha256": "45d30e0d361fbf247ef4bdd99fb92e28e89ecb0dec0b7a9f981a48f75569efad",
+  "stage_id": "stage1-20261107"
+}

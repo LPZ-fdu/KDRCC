@@ -1,0 +1,21 @@
+# Reproducibility
+
+`05_submit.R` records the submitted settings, effective configuration, source hashes, session information and log in the work directory. Code and work directories are separate. The full module identity includes the generating mechanism, evaluation definitions, plan and core implementation hashes.
+
+Data are generated using deterministic semantic seeds for module batch, learning/estimation role, repetition, block and null coordinate. Process scheduling and worker count do not enter the seed. Matching sets remain intact in three-fold nuisance cross-fitting. Module A uses a random-stream namespace distinct from B/C. Paired dimensions and parameter comparisons share compatible generated data within a repetition.
+
+The independent evaluation distribution and all grids are saved. Contribution references and the exact interaction contrast coordinates therefore remain recoverable. Coefficients, covariances, numerical traces and interpretation results are stored with each fit. Point, covariance, variable-test and interpretation availability are separately recorded.
+
+With `resume=TRUE`, completed matching records are reused within that run; `retry_failed=TRUE` requests incomplete or unsuccessful results again. A live run lock prevents duplicate submissions. After confirming all earlier processes have stopped, `clear_stale_lock=TRUE` permits recovery from an interrupted session. Restore it to FALSE after that submission.
+
+Reporting reads saved results and keeps its source snapshot separately. To reproduce a report on another computer, copy a complete module directory and use `report_run_directories` in `05_submit.R`. `report_overrides` controls presentation while the saved evaluation definitions remain fixed. Source checksums are provided in SOURCE_CHECKSUMS.csv.
+
+Module D uses the `correlation` seed namespace independently of B. Within a repetition, moderate/high settings share calendar, confounder, original exposure and common-score random inputs. Marginal-map estimation, correlation calibration, validation, learning, estimation and evaluation have distinct deterministic seeds. Scenario-specific caches preserve isolation. Complete B snapshots are verified against recorded MD5 hashes and retain their original evaluation targets. Reporting combines the three settings without refitting B. `tests/module_D_checks.R` checks the plan and transforms; `tests/module_D_smoke.R` exercises B import, independent calibration, a small parallel D run, common targets, resumption and reporting.
+
+Module E uses application-selection namespaces distinct from A–D. Scenario, repetition, learning/tuning/estimation role and block identify each random stream. The fixed and adaptive strategies share final data within a repetition. Fold assignments, candidate identities, finite-score eligibility, all fold scores, selected configurations and fallbacks are checkpointed. Reporting combines selected configurations into procedure-level results. E's learning-data nuisance dictionaries, calibration, evaluation distributions and scientific source snapshot are saved with the run. The final covariance is conditional on learned and selected objects; empirical simulation summaries include variation of the whole selection procedure.
+
+## Submission and result records
+
+`05_submit.R` is the independent execution entry. It specifies the source and work directories, modules, worker count and explicit configuration overrides. Dependency checks, numerical checks, fitting, reporting and configuration freezing have separate actions. After reviewing module A, freeze a configuration for B–D; E evaluates independently validated selection alongside the fixed configuration. All overrides are saved with the effective settings.
+
+The default execution profile uses 32 PSOCK workers. Fitting and publication reporting run separately. Source files include the method specification, editable appendix content, document builder, tests, generating mechanism and SHA-256 manifest. Work directories retain plans, configuration snapshots, successful and failed fits, logs and session versions. Contribution processing and reporting use the prespecified active-exposure set and save the reference and evaluation definitions.

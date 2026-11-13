@@ -1,0 +1,12 @@
+/KDRCC_formal_20261027/
+/release_assets/
+/library/
+/.Rproj.user/
+/.Rhistory
+/.RData
+/.Ruserdata
+/validation/
+__pycache__/
+*.pyc
+*.tmp
+*.previous

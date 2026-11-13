@@ -1,0 +1,6 @@
+^\.github$
+^README\.md$
+^NEWS\.md$
+^LICENSE$
+^SOURCE_CHECKSUMS\.csv$
+^CITATION\.cff$

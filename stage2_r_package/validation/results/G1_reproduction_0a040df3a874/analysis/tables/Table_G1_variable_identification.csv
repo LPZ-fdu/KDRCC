@@ -1,0 +1,17 @@
+"implementation","config_id","null_count","variable","usable_repetitions","selected","rate","lower","upper"
+"Archived G1","F_8f51df1f6f2e",0,"PM25",100,100,1,0.963006501793014,1
+"Archived G1","F_8f51df1f6f2e",0,"PMcoarse",100,99,0.99,0.945513803821295,0.998232567935859
+"Archived G1","F_8f51df1f6f2e",0,"O3",100,100,1,0.963006501793014,1
+"Archived G1","F_8f51df1f6f2e",0,"NO2",100,100,1,0.963006501793014,1
+"Archived G1","F_8f51df1f6f2e",0,"SO2",100,100,1,0.963006501793014,1
+"Archived G1","F_8f51df1f6f2e",0,"CO",100,100,1,0.963006501793014,1
+"Archived G1","F_8f51df1f6f2e",0,"temperature",100,100,1,0.963006501793014,1
+"Archived G1","F_8f51df1f6f2e",0,"humidity",100,100,1,0.963006501793014,1
+"R package","F_8f51df1f6f2e",0,"PM25",100,100,1,0.963006501793014,1
+"R package","F_8f51df1f6f2e",0,"PMcoarse",100,99,0.99,0.945513803821295,0.998232567935859
+"R package","F_8f51df1f6f2e",0,"O3",100,100,1,0.963006501793014,1
+"R package","F_8f51df1f6f2e",0,"NO2",100,100,1,0.963006501793014,1
+"R package","F_8f51df1f6f2e",0,"SO2",100,100,1,0.963006501793014,1
+"R package","F_8f51df1f6f2e",0,"CO",100,100,1,0.963006501793014,1
+"R package","F_8f51df1f6f2e",0,"temperature",100,100,1,0.963006501793014,1
+"R package","F_8f51df1f6f2e",0,"humidity",100,100,1,0.963006501793014,1

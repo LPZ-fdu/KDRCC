@@ -1,0 +1,9 @@
+﻿"config_id","method","scenario_gf","null_count","p","planned_repetitions","completed","point_ok","interval_ok","selection_ok","interpretation_ok","interaction_ok"
+"F_8f51df1f6f2e","LinearCLR","correct",0,8,100,100,100,100,0,100,100
+"F_8f51df1f6f2e","SplineCLR","correct",0,8,100,100,100,100,0,100,100
+"F_8f51df1f6f2e","KDR","G1",0,8,100,100,100,100,100,100,100
+"F_8f51df1f6f2e","KDR","G2",0,8,100,100,100,100,0,100,100
+"F_8f51df1f6f2e","KDR","G3",0,8,100,100,100,100,0,100,100
+"F_8f51df1f6f2e","KDR","G4",0,8,100,100,100,100,0,100,100
+"F_8f51df1f6f2e","LinearCLR","wrong",0,8,100,100,100,100,0,100,100
+"F_8f51df1f6f2e","SplineCLR","wrong",0,8,100,100,100,100,0,100,100

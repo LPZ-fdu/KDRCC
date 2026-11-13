@@ -1,0 +1,16 @@
+Package: kdrcc
+Type: Package
+Title: Kernel-Based Doubly Robust Case-Crossover Regression
+Version: 0.1.0
+Authors@R: person("Peizheng", "Li", email = "pzli25@m.fudan.edu.cn", role = c("aut", "cre"))
+Description: Estimates nonlinear joint exposure associations in individually
+    matched case-crossover data using a regularized kernel criterion built
+    from a doubly robust estimating equation. Provides independent kernel
+    learning, matched-set cross-fitting, auxiliary-adjusted covariance,
+    configuration selection, effect contrasts, interaction and variable
+    participation tests, and baseline Shapley contribution summaries.
+License: GPL-3
+Depends: R (>= 3.6.3)
+Imports: stats, utils, graphics, grDevices, parallel, splines, CompQuadForm (>= 1.4.4)
+Encoding: UTF-8
+NeedsCompilation: no

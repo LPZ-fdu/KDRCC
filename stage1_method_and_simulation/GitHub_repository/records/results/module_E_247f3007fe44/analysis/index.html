@@ -1,0 +1,107 @@
+<!doctype html><html lang='en'><meta charset='utf-8'><title>Module E</title><style>body{font-family:serif;margin:30px;max-width:1300px}img{max-width:100%}</style><h1>Data-driven configuration selection</h1>
+<h2>Effect accuracy across exposure settings</h2>
+<img src='figures/Figure_E_accuracy.png'>
+<p>Fixed and data-selected strategies use matched final samples. Error bars, where available, are 95% Monte Carlo intervals across independent repetitions. Coverage refers to nominal pointwise 95% intervals.</p>
+<h2>Identification of active exposures</h2>
+<img src='figures/Figure_E_active_exposures.png'>
+<p>Identification rates compare the fixed and adaptive procedures for each of the eight active exposures. Variable-level Wilson intervals and available repetitions are tabulated.</p>
+<h2>Configuration selection frequencies</h2>
+<img src='figures/Figure_E_configuration_frequency.png'>
+<p>Cell values are percentages of available selection records. Candidate definitions are in Table_E_candidates.</p>
+<h2>Contribution and interaction recovery</h2>
+<img src='figures/Figure_E_interpretation.png'>
+<p>Contribution error uses the mean repetition-level RMSE of percentage shares across the eight prespecified active exposures at the reference background. Detection rates use the specified Holm corrections.</p>
+<h2>Optimization convergence</h2>
+<img src='model_diagnostics/figures/Figure_E_model_convergence.png'>
+<p>The line is the median gradient magnitude at each recorded iteration; shading is the 10th to 90th percentile range among fits reaching that iteration. The horizontal line is the stopping gradient tolerance. Different objective functions are shown in separate panels.</p>
+<h2>Kernel distance-parameter boundary rates</h2>
+<img src='model_diagnostics/figures/Figure_E_model_kernel_boundaries.png'>
+<p>Rates summarize unique fitted kernels. The null-exposure bar pools all null-variable parameters. These numerical diagnostics describe fitted smoothness and are separate from the variable significance tests.</p>
+<h2>Effect recovery: Eight exposures</h2>
+<img src='figures/Figure_E_recovery_E0.png'>
+<p>Dashed black denotes truth or the identity line. Colored curves/points show repetition-mean estimates. These display recovery under the chosen procedure; pointwise interval calibration and repetition variability are tabulated separately.</p>
+<h2>Effect recovery: High correlation</h2>
+<img src='figures/Figure_E_recovery_EDH.png'>
+<p>Dashed black denotes truth or the identity line. Colored curves/points show repetition-mean estimates. These display recovery under the chosen procedure; pointwise interval calibration and repetition variability are tabulated separately.</p>
+<h2>Effect recovery: Moderate correlation</h2>
+<img src='figures/Figure_E_recovery_EDM.png'>
+<p>Dashed black denotes truth or the identity line. Colored curves/points show repetition-mean estimates. These display recovery under the chosen procedure; pointwise interval calibration and repetition variability are tabulated separately.</p>
+<h2>Effect recovery: 16 null exposures</h2>
+<img src='figures/Figure_E_recovery_EQ16.png'>
+<p>Dashed black denotes truth or the identity line. Colored curves/points show repetition-mean estimates. These display recovery under the chosen procedure; pointwise interval calibration and repetition variability are tabulated separately.</p>
+<h2>Effect recovery: 40 null exposures</h2>
+<img src='figures/Figure_E_recovery_EQ40.png'>
+<p>Dashed black denotes truth or the identity line. Colored curves/points show repetition-mean estimates. These display recovery under the chosen procedure; pointwise interval calibration and repetition variability are tabulated separately.</p>
+<h2>Effect recovery: 8 null exposures</h2>
+<img src='figures/Figure_E_recovery_EQ8.png'>
+<p>Dashed black denotes truth or the identity line. Colored curves/points show repetition-mean estimates. These display recovery under the chosen procedure; pointwise interval calibration and repetition variability are tabulated separately.</p>
+<h2>Effect recovery: 80 null exposures</h2>
+<img src='figures/Figure_E_recovery_EQ80.png'>
+<p>Dashed black denotes truth or the identity line. Colored curves/points show repetition-mean estimates. These display recovery under the chosen procedure; pointwise interval calibration and repetition variability are tabulated separately.</p>
+<h2>Configuration-selection computing time</h2>
+<img src='figures/Figure_E_selection_cost.png'>
+<p>Boxplots show selection elapsed time in minutes across completed independent repetitions. Checkpoint reuse can shorten resumed tasks.</p>
+<h2>Uncertainty calibration across exposure settings</h2>
+<img src='figures/Figure_E_uncertainty.png'>
+<p>Fixed and data-selected strategies use matched final samples. Error bars, where available, are 95% Monte Carlo intervals across independent repetitions. Coverage refers to nominal pointwise 95% intervals.</p>
+<h2>Variable identification across exposure settings</h2>
+<img src='figures/Figure_E_variable_selection.png'>
+<p>Mean true-positive and false-positive rates compare the two strategies. Only settings with defined false-positive rates appear in that panel.</p>
+<h2>Identification of each active exposure</h2>
+<a href='tables/Table_E_active_rates.html'>Formatted table</a>
+<p>Rates use complete usable variable-test repetitions. Humidity acts through interaction. Wilson intervals quantify Monte Carlo uncertainty.</p>
+<h2>Availability of final paired estimates</h2>
+<a href='tables/Table_E_availability.html'>Formatted table</a>
+<p>Each scenario uses new independent repetitions. Both strategies use identical final-estimation data. Completed records include recorded failures; usable estimates, intervals and tests have separate denominators.</p>
+<h2>Prespecified configuration candidates</h2>
+<a href='tables/Table_E_candidates.html'>Formatted table</a>
+<p>N and L are final-estimation and independent kernel-learning matched-set counts. M, kappa and lambda are selected by the minimum pooled held-out conditional negative log likelihood. The frozen configuration is always included. Three validation folds each use two-thirds of the configuration pool for estimation. The independent kernel-learning pool is common to all folds.</p>
+<h2>Selected configuration in each independent repetition</h2>
+<a href='tables/Table_E_choices.html'>Formatted table</a>
+<p>Selection success requires at least one candidate with finite validation scores in every fold. Fallback denotes use of the frozen configuration after all candidates failed. The paired final performance includes this prespecified fallback. Elapsed component times reflect checkpoint reuse when a task is resumed.</p>
+<h2>Configuration selection: contributions</h2>
+<a href='tables/Table_E_contributions.html'>Formatted table</a>
+<p>Fixed and adaptive results use common evaluation combinations and references. Contribution shares normalize mean absolute baseline-Shapley values within the eight prespecified active exposures, with all additional coordinates fixed at their reference values. Overall interactions use Holm across four pairs; corrected directions use Holm across all evaluated grid contrasts. Quantitative contrasts use the log-OR scale for error and exponentiation for OR limits. Repetition-specific selected parameters are in Table_E_choices.</p>
+<h2>Configuration selection: directions</h2>
+<a href='tables/Table_E_directions.html'>Formatted table</a>
+<p>Fixed and adaptive results use common evaluation combinations and references. Contribution shares normalize mean absolute baseline-Shapley values within the eight prespecified active exposures, with all additional coordinates fixed at their reference values. Overall interactions use Holm across four pairs; corrected directions use Holm across all evaluated grid contrasts. Quantitative contrasts use the log-OR scale for error and exponentiation for OR limits. Repetition-specific selected parameters are in Table_E_choices.</p>
+<h2>Effect recovery after data-driven parameter selection</h2>
+<a href='tables/Table_E_effect_performance.html'>Formatted table</a>
+<p>RMS bias is the root mean squared pointwise bias across independent repetitions; RMSE averages squared errors over repetitions and evaluation points. Errors use log OR; absolute relative OR error is 100*abs(exp(estimate-truth)-1). Empirical and model SE use RMS aggregation. Intervals condition on the independently learned kernel and selected configuration. The empirical evaluations include configuration selection variability. Selection never uses these truth-based metrics.</p>
+<h2>Computational resources for final estimation</h2>
+<a href='tables/Table_E_final_fit_resources.html'>Formatted table</a>
+<p>Per-fit times cover learning, nuisance estimation and final inference components. Configuration selection costs are recorded separately in Table_E_choices. Shared kernel costs are reused. Memory sampling availability depends on the platform.</p>
+<h2>Geometric support of joint evaluation combinations</h2>
+<a href='tables/Table_E_joint_support.html'>Formatted table</a>
+<p>Squared Mahalanobis distances use the eight active-exposure coordinates and an independent scenario evaluation sample. The reference is its empirical 95th percentile. This is a geometric description of extrapolation along the common joint path.</p>
+<h2>Estimated exposure distance parameters</h2>
+<a href='model_diagnostics/tables/Table_E_model_distance_parameters.html'>Formatted table</a>
+<p>Positive distance parameters control Gaussian kernel smoothness. Bound indicators use a 1e-6 tolerance on the log scale. Null variables have their own distance parameters.</p>
+<h2>Outcome-supervised kernel optimization</h2>
+<a href='model_diagnostics/tables/Table_E_model_kernel_learning.html'>Formatted table</a>
+<p>Each independent kernel initialization reports its objective, projected gradient, optimizer status and bound hits. Shared kernels appear once rather than once per nuisance scenario.</p>
+<h2>Numerical fitting and covariance diagnostics</h2>
+<a href='model_diagnostics/tables/Table_E_model_status.html'>Formatted table</a>
+<p>One row per planned fit. Point convergence, interval availability, interpretation availability and recorded errors are separate fields. Penalized convergence is assessed by the objective gradient and scaled step; the unpenalized equation residual is reported alongside it.</p>
+<h2>Configuration selection: OR</h2>
+<a href='tables/Table_E_OR.html'>Formatted table</a>
+<p>Fixed and adaptive results use common evaluation combinations and references. Contribution shares normalize mean absolute baseline-Shapley values within the eight prespecified active exposures, with all additional coordinates fixed at their reference values. Overall interactions use Holm across four pairs; corrected directions use Holm across all evaluated grid contrasts. Quantitative contrasts use the log-OR scale for error and exponentiation for OR limits. Repetition-specific selected parameters are in Table_E_choices.</p>
+<h2>Paired changes in final performance</h2>
+<a href='tables/Table_E_paired_changes.html'>Formatted table</a>
+<p>Differences are adaptive minus fixed within the same repetition, restricted to pairs with both available values. Negative RMSE and OR-error changes favor adaptive selection. Positive coverage and correct-direction detection changes indicate increases. The table reports mean repetition-level changes; aggregate RMS bias and pooled RMSE appear in the effect-performance table.</p>
+<h2>Configuration selection: pairs</h2>
+<a href='tables/Table_E_pairs.html'>Formatted table</a>
+<p>Fixed and adaptive results use common evaluation combinations and references. Contribution shares normalize mean absolute baseline-Shapley values within the eight prespecified active exposures, with all additional coordinates fixed at their reference values. Overall interactions use Holm across four pairs; corrected directions use Holm across all evaluated grid contrasts. Quantitative contrasts use the log-OR scale for error and exponentiation for OR limits. Repetition-specific selected parameters are in Table_E_choices.</p>
+<h2>Configuration selection: scores</h2>
+<a href='tables/Table_E_scores.html'>Formatted table</a>
+<p>Fixed and adaptive results use common evaluation combinations and references. Contribution shares normalize mean absolute baseline-Shapley values within the eight prespecified active exposures, with all additional coordinates fixed at their reference values. Overall interactions use Holm across four pairs; corrected directions use Holm across all evaluated grid contrasts. Quantitative contrasts use the log-OR scale for error and exponentiation for OR limits. Repetition-specific selected parameters are in Table_E_choices.</p>
+<h2>Configuration-selection availability and elapsed time</h2>
+<a href='tables/Table_E_selection_costs.html'>Formatted table</a>
+<p>Elapsed times are within-worker wall times. Selection includes learning and validation; final-pair time covers the paired final computations. Shared work and concurrent execution make their sum different from whole-study wall time. Resumed tasks can have reduced times.</p>
+<h2>Configuration selection frequencies</h2>
+<a href='tables/Table_E_selection_frequency.html'>Formatted table</a>
+<p>Frequencies use available selection records in each scenario and include the explicitly recorded fallback rule. Planned repetitions and availability are tabulated separately.</p>
+<h2>Effective-variable identification and null-variable inclusion</h2>
+<a href='tables/Table_E_variable_selection.html'>Formatted table</a>
+<p>TPR and FPR are averaged over complete usable repetitions after Holm correction. FPR is undefined when the null count is zero. Monte Carlo intervals use whole-repetition rates.</p>
+</html>

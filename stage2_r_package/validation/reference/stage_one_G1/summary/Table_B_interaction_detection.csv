@@ -1,0 +1,5 @@
+"config_id","method","scenario_gf","null_count","p","component","exposure_1","exposure_2","records","usable_tests","raw_detection_percent","corrected_detection_percent","lower_MC","upper_MC","fit_scenario"
+"F_8f51df1f6f2e","KDR","G1",0,8,"O3__temperature","O3","temperature",100,100,100,100,96.3006501793014,100,"G1"
+"F_8f51df1f6f2e","KDR","G1",0,8,"PM25__O3","PM25","O3",100,100,100,100,96.3006501793014,100,"G1"
+"F_8f51df1f6f2e","KDR","G1",0,8,"PM25__temperature","PM25","temperature",100,100,100,100,96.3006501793014,100,"G1"
+"F_8f51df1f6f2e","KDR","G1",0,8,"temperature__humidity","temperature","humidity",100,100,100,100,96.3006501793014,100,"G1"

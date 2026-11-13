@@ -1,0 +1,16 @@
+<!doctype html><meta charset='utf-8'><h1>Model diagnostics</h1>
+<h2>Optimization convergence</h2>
+<img style='max-width:100%' src='figures/Figure_B_model_convergence.png'>
+<p>The line is the median gradient magnitude at each recorded iteration; shading is the 10th to 90th percentile range among fits reaching that iteration. The horizontal line is the stopping gradient tolerance. Different objective functions are shown in separate panels.</p>
+<h2>Kernel distance-parameter boundary rates</h2>
+<img style='max-width:100%' src='figures/Figure_B_model_kernel_boundaries.png'>
+<p>Rates summarize unique fitted kernels. The null-exposure bar pools all null-variable parameters. These numerical diagnostics describe fitted smoothness and are separate from the variable significance tests.</p>
+<h2>Estimated exposure distance parameters</h2>
+<a href='tables/Table_B_model_distance_parameters.html'>Table</a>
+<p>Positive distance parameters control Gaussian kernel smoothness. Bound indicators use a 1e-6 tolerance on the log scale. Null variables have their own distance parameters.</p>
+<h2>Outcome-supervised kernel optimization</h2>
+<a href='tables/Table_B_model_kernel_learning.html'>Table</a>
+<p>Each independent kernel initialization reports its objective, projected gradient, optimizer status and bound hits. Shared kernels appear once rather than once per nuisance scenario.</p>
+<h2>Numerical fitting and covariance diagnostics</h2>
+<a href='tables/Table_B_model_status.html'>Table</a>
+<p>One row per planned fit. Point convergence, interval availability, interpretation availability and recorded errors are separate fields. Penalized convergence is assessed by the objective gradient and scaled step; the unpenalized equation residual is reported alongside it.</p>

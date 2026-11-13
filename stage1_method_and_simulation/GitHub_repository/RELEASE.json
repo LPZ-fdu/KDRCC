@@ -1,0 +1,29 @@
+{
+  "name": "KDR-CC simulation study",
+  "version": "1.0.0",
+  "freeze_date": "2026-11-07",
+  "method_specification": "docs/METHOD_SPECIFICATION.md",
+  "appendix": "manuscript/Appendix_KDRCC_zh.docx",
+  "mechanism_id": "9d3750065660d0322c16b0fd90ff134c",
+  "published_configuration": {
+    "config_id": "A035",
+    "N": 20000,
+    "L": 20000,
+    "M": 144,
+    "kappa": 0.0001,
+    "lambda": 1
+  },
+  "validation": {
+    "review": "docs/FINAL_REVIEW.md",
+    "source_archive_checks": 60,
+    "scope": "Methods, implementation correspondence and formal record inventory"
+  },
+  "result_archive": "../KDRCC_formal_20261027/results",
+  "archive_inventory": "archive/",
+  "file_manifest": "SOURCE_CHECKSUMS.csv",
+  "hash_algorithm": "SHA-256",
+  "contribution_scope": "active_reference_shapley_v1",
+  "contribution_execution": "05_submit.R contributions C,E; 05_submit.R report C,E",
+  "stage_id": "stage1-20261107",
+  "runtime_assets": "archive/release_assets.csv"
+}

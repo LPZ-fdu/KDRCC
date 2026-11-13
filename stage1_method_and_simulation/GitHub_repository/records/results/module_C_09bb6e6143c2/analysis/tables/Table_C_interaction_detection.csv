@@ -1,0 +1,17 @@
+﻿"config_id","method","scenario_gf","null_count","p","component","exposure_1","exposure_2","records","usable_tests","raw_detection_percent","corrected_detection_percent","lower_MC","upper_MC"
+"F_8f51df1f6f2e","KDR","G1",16,24,"O3__temperature","O3","temperature",100,100,100,100,96.3006501793014,100
+"F_8f51df1f6f2e","KDR","G1",16,24,"PM25__O3","PM25","O3",100,100,100,100,96.3006501793014,100
+"F_8f51df1f6f2e","KDR","G1",16,24,"PM25__temperature","PM25","temperature",100,100,100,100,96.3006501793014,100
+"F_8f51df1f6f2e","KDR","G1",16,24,"temperature__humidity","temperature","humidity",100,100,99,99,94.5513803821295,99.8232567935859
+"F_8f51df1f6f2e","KDR","G1",40,48,"O3__temperature","O3","temperature",100,100,100,100,96.3006501793014,100
+"F_8f51df1f6f2e","KDR","G1",40,48,"PM25__O3","PM25","O3",100,100,100,100,96.3006501793014,100
+"F_8f51df1f6f2e","KDR","G1",40,48,"PM25__temperature","PM25","temperature",100,100,100,100,96.3006501793014,100
+"F_8f51df1f6f2e","KDR","G1",40,48,"temperature__humidity","temperature","humidity",100,100,88,88,80.1879005732886,93.0005935629805
+"F_8f51df1f6f2e","KDR","G1",8,16,"O3__temperature","O3","temperature",100,100,100,100,96.3006501793014,100
+"F_8f51df1f6f2e","KDR","G1",8,16,"PM25__O3","PM25","O3",100,100,100,100,96.3006501793014,100
+"F_8f51df1f6f2e","KDR","G1",8,16,"PM25__temperature","PM25","temperature",100,100,100,100,96.3006501793014,100
+"F_8f51df1f6f2e","KDR","G1",8,16,"temperature__humidity","temperature","humidity",100,100,100,100,96.3006501793014,100
+"F_8f51df1f6f2e","KDR","G1",80,88,"O3__temperature","O3","temperature",99,99,69.6969696969697,62.6262626262626,52.7924453229026,71.5168169986169
+"F_8f51df1f6f2e","KDR","G1",80,88,"PM25__O3","PM25","O3",99,99,75.7575757575758,72.7272727272727,63.2290754801073,80.5275966986278
+"F_8f51df1f6f2e","KDR","G1",80,88,"PM25__temperature","PM25","temperature",99,99,79.7979797979798,74.7474747474748,65.3755310898759,82.2706230603024
+"F_8f51df1f6f2e","KDR","G1",80,88,"temperature__humidity","temperature","humidity",99,99,76.7676767676768,71.7171717171717,62.1638844415831,79.6480467514304

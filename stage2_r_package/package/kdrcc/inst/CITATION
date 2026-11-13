@@ -1,0 +1,2 @@
+bibentry("Manual", title="kdrcc: Kernel-Based Doubly Robust Case-Crossover Regression",
+  author=person("Peizheng", "Li"), year="2026", note="R package version 0.1.0")

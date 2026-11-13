@@ -1,0 +1,15 @@
+﻿"scenario","strategy","planned","completed","point_estimates","intervals","variable_tests","interaction_tests"
+"Eight exposures","Adaptive",100,100,100,100,100,100
+"Eight exposures","Fixed",100,100,100,100,100,100
+"High correlation","Adaptive",100,100,100,100,100,100
+"High correlation","Fixed",100,100,100,100,100,100
+"Moderate correlation","Adaptive",100,100,100,100,100,100
+"Moderate correlation","Fixed",100,100,100,100,100,100
+"16 null exposures","Adaptive",100,100,100,100,100,100
+"16 null exposures","Fixed",100,100,100,100,100,100
+"40 null exposures","Adaptive",100,100,100,100,100,100
+"40 null exposures","Fixed",100,100,100,100,100,100
+"8 null exposures","Adaptive",100,100,100,100,100,100
+"8 null exposures","Fixed",100,100,100,100,100,100
+"80 null exposures","Adaptive",100,100,100,100,100,100
+"80 null exposures","Fixed",100,100,96,96,96,96

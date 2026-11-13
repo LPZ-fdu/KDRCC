@@ -1,0 +1,30 @@
+"check","repetitions","passed","maximum_absolute_difference","smallest_tolerance","largest_tolerance"
+"Coefficient covariance",100,100,4.77048955893622e-18,0.00100023501807128,0.00100029195919257
+"Contribution shares (percentage points)",100,100,1.87583282240666e-12,0.02,0.02
+"Feature whitening",100,100,0,0.38855908779293,5.28583958539179
+"Independently learned centers",100,100,0,2e-04,2e-04
+"Independently learned distance parameters",100,100,0,0.00113228912768707,0.00226556883743821
+"Joint and observed-combination confidence limits",100,100,2.88657986402541e-15,6e-04,6e-04
+"Joint and observed-combination log OR",100,100,2.66453525910038e-15,2e-04,2e-04
+"Joint and observed-combination standard errors",100,100,4.71844785465692e-16,2e-04,2e-04
+"Moment transformation",100,100,4.04121180963557e-14,0.00453677091338955,0.00488404370632345
+"Original-stream penalty matrix",100,100,0,0.00306564000555479,0.00413666552160866
+"Overall interaction Holm decisions",100,100,0,0,0
+"Overall interaction p values",100,100,5e-06,5e-04,5e-04
+"Pointwise interaction directions",100,100,0,0,0
+"Pointwise interaction Holm p values",100,100,3.68038932663239e-14,5e-04,5e-04
+"Quantitative log-OR contrasts",100,100,1.77635683940025e-15,2e-04,2e-04
+"Regularized coefficients",100,100,3.33066907387547e-16,0.00117543593104971,0.00138554871338247
+"Response confidence limits",100,100,1.55431223447522e-15,6e-04,6e-04
+"Response standard errors",100,100,2.28983498828939e-16,2e-04,2e-04
+"Single-exposure and four-point interaction log OR",100,100,1.22124532708767e-15,2e-04,2e-04
+"Variable Holm decisions",100,100,0,0,0
+"Variable p value CO",100,100,1.55431223447522e-15,5e-04,5e-04
+"Variable p value humidity",100,100,1.4432899320127e-15,5e-04,5e-04
+"Variable p value NO2",100,100,1.4432899320127e-15,5e-04,5e-04
+"Variable p value O3",100,100,0,5e-04,5e-04
+"Variable p value PM25",100,100,1.99840144432528e-15,5e-04,5e-04
+"Variable p value PMcoarse",100,100,2.22044604925031e-15,5e-04,5e-04
+"Variable p value SO2",100,100,1.55431223447522e-15,5e-04,5e-04
+"Variable p value temperature",100,100,0,5e-04,5e-04
+"Variable quadratic statistics",100,100,7.21644966006352e-16,0.00123684349022632,0.00138760811131225

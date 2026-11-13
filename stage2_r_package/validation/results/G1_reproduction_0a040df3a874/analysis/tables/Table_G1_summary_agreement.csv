@@ -1,0 +1,19 @@
+"result","quantity","comparison_rows","finite_pairs","maximum_absolute_difference","mean_absolute_difference"
+"Joint and observed combinations","mean_estimate",1023,1023,8.88178419700125e-16,1.35542864675119e-16
+"Joint and observed combinations","empirical_SD",1023,1023,1.52655665885959e-16,2.07420699493141e-17
+"Joint and observed combinations","mean_CI_lower",1023,1023,8.88178419700125e-16,1.4072398388384e-16
+"Joint and observed combinations","mean_CI_upper",1023,1023,6.66133814775094e-16,1.27813340447972e-16
+"Single and interaction curves","mean_estimate",736,736,3.33066907387547e-16,1.92112136221199e-17
+"Single and interaction curves","pointwise_RMSE",736,736,2.4980018054066e-16,8.18925724069243e-18
+"Single and interaction curves","mean_CI_lower",736,736,3.33066907387547e-16,1.91387554776102e-17
+"Single and interaction curves","mean_CI_upper",736,736,3.33066907387547e-16,1.90881728796514e-17
+"Effect accuracy","RMS_Bias",2,2,6.93889390390723e-17,4.85722573273506e-17
+"Effect accuracy","RMSE",2,2,5.55111512312578e-17,3.46944695195361e-17
+"Effect accuracy","mean_OR_absolute_relative_error",2,2,5.32907051820075e-15,2.66453525910038e-15
+"Effect accuracy","coverage_percent",2,2,0,0
+"Contribution shares","estimated_share",8,8,1.77635683940025e-14,1.0547118733939e-14
+"Contribution shares","share_RMSE",8,8,7.68274333040608e-14,2.30093721853564e-14
+"Overall interactions","corrected_detection_percent",4,4,0,0
+"Interaction directions","corrected_correct_percent",4,4,0,0
+"Interaction directions","corrected_wrong_percent",4,4,0,0
+"Variable identification","rate",8,8,0,0

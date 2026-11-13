@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this software when using KDR-CC."
+type: software
+title: "kdrcc: Kernel-Based Doubly Robust Case-Crossover Regression"
+version: 0.1.0
+date-released: 2026-11-07
+authors:
+  - family-names: Li
+    given-names: Peizheng
+    email: pzli25@m.fudan.edu.cn
+license: GPL-3.0-only

@@ -1,0 +1,31 @@
+Kernel-Based Doubly Robust Case-Crossover Regression
+Estimation matched sets: 550 | Independent learning sets: 250 
+Exposures: X1, X2, X3, X4 
+Configuration: M=1e+01, kappa=1e-03, lambda=1e+00 
+Objective: 0.03785714 | Gradient: 5.202815e-09 
+Covariance: available 
+R version 4.4.2 (2024-10-31 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 11 x64 (build 26100)
+
+Matrix products: default
+
+
+locale:
+[1] LC_COLLATE=English_United States.utf8 
+[2] LC_CTYPE=English_United States.utf8   
+[3] LC_MONETARY=English_United States.utf8
+[4] LC_NUMERIC=C                          
+[5] LC_TIME=English_United States.utf8    
+
+time zone: Asia/Shanghai
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] kdrcc_0.1.0
+
+loaded via a namespace (and not attached):
+[1] compiler_4.4.2     splines_4.4.2      CompQuadForm_1.4.4

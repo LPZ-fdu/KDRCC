@@ -1,0 +1,4 @@
+﻿"correlation_id","correlation_label","target_mean","min_abs","mean_tolerance","correlation_mix","source","mean_absolute_correlation","minimum_signed_correlation","maximum_signed_correlation","minimum_absolute_correlation","maximum_absolute_correlation","evaluation_matched_sets","evaluation_rows"
+"D0","Original (module B)",,,,0,"Reused module B",0.258599598393686,-0.297860048041048,0.440232249485545,0.0353759272037053,0.440232249485545,5000,21720
+"DM","Moderate",0.6,0.45,0.03,0.492704748699156,"New module D",0.604729700766101,-0.636417993830465,0.681861642835499,0.479236415223266,0.681861642835499,5000,21753
+"DH","High",0.85,0.75,0.03,0.846503380004136,"New module D",0.85147200443956,-0.878512068769281,0.896527627154469,0.775234871564029,0.896527627154469,5000,21753

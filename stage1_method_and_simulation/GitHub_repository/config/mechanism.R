@@ -1,0 +1,46 @@
+# Fully specified simulation distribution and response surface.
+simulation_mechanism <- function() {
+  list(dgp = list(year = 2021L, phi = 0.59999999999999998, p_stay = 0.59999999999999998, 
+      common_fraction = 0.29999999999999999, confounding = 0.29999999999999999, 
+      pollutant_lag = 2L, weather_lag = 3L, base_concentration = c(35, 
+      20, 80, 30, 8, 0.69999999999999996), direction = c(1, 1, 
+      -1, 1, 1, 1, -1, 1), confounding_quadratic = 0.59999999999999998, 
+      outcome_linear = 0.34999999999999998, outcome_quadratic = 0.80000000000000004, 
+      lag_windows = list(0:1, 0:1, 0:1, 1L, 0:3, 1L, 0:3, 0:3), 
+      independent_multiplier = c(1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 
+      1, 1)), truth = list(model = "specified_response_v1", temperature = list(
+      optimum = 23, distance = 10, cold_log_coefficient = 0.28332171326750816, 
+      hot_log_coefficient = 0.45580389198488647), interactions = structure(list(
+      q = c(7L, 7L, 7L, 1L), r = c(8L, 1L, 3L, 3L), coefficient = c(0.135743242415130250, 0.084016234171294737, 0.085641763170191634, 0.069229207135094992)), row.names = c(NA, -4L), class = "data.frame"), 
+      anchors = list(PM25 = structure(list(x = c(20, 40, 60, 70, 
+      90), percent = c(0, 0.65000000000000002, 0.90000000000000002, 
+      0.88, 0.80000000000000004)), class = "data.frame", row.names = c(NA, 
+      -5L)), PMcoarse = structure(list(x = c(10, 20, 30, 40, 50
+      ), percent = c(0, 0.59999999999999998, 1, 1.1000000000000001, 
+      1.1000000000000001)), class = "data.frame", row.names = c(NA, 
+      -5L)), O3 = structure(list(x = c(40, 60, 80, 100, 120), percent = c(0, 
+      0.59999999999999998, 0.85999999999999999, 0.88, 0.88)), class = "data.frame", row.names = c(NA, 
+      -5L)), NO2 = structure(list(x = c(15, 20, 25, 30, 35, 40), 
+          percent = c(0, 0.65000000000000002, 1.25, 1.6499999999999999, 
+          1.8500000000000001, 2)), class = "data.frame", row.names = c(NA, 
+      -6L)), SO2 = structure(list(x = c(5, 10, 15, 20, 25), percent = c(0, 
+      0.40000000000000002, 0.90000000000000002, 1.25, 1.3)), class = "data.frame", row.names = c(NA, 
+      -5L)), CO = structure(list(x = c(0.80000000000000004, 0.94999999999999996, 
+      1.1000000000000001, 1.25, 1.3999999999999999), percent = c(0, 
+      0.20000000000000001, 0.28000000000000003, 0.23999999999999999, 
+      0.14999999999999999)), class = "data.frame", row.names = c(NA, 
+      -5L))), pollutant_coefficients = c(17.112418710877776, 13.913096678721358, 
+      26.073644852510974, 8.0596774188854994, 12.79955477357638, 
+      52.197219147161292)), mapping = structure(c(-1.0210089575560235, 
+  -1.2195792081324952, -0.067312847125927888, 0.4717717607593328, 
+  -0.96558031217677409, 0.21876678085446516, 1.3378161714626096, 
+  1.4395504765677922, 0.98059695449051232, 0.80029256331145715, 
+  1.6089936698173082, 0.45771151019886946), dim = c(6L, 2L)), reference = list(
+      center = c(PM25 = 42.653743784000042, PMcoarse = 22.484988475940618, 
+      O3 = 69.597959198925238, NO2 = 24.350826220968372, SO2 = 11.23099575676525, 
+      CO = 1.0558772063835886, temperature = 18.233483453404244, 
+      humidity = 59.759691467876451), scale = c(PM25 = 21.58191279711161, 
+      PMcoarse = 12.620583526464502, O3 = 24.40188955630121, NO2 = 7.562830812139989, 
+      SO2 = 6.2724344920998352, CO = 0.18270321658211391, temperature = 9.158708780876653, 
+      humidity = 8.4051505966808726)))
+}

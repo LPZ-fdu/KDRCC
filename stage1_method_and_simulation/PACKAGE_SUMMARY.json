@@ -1,0 +1,9 @@
+{
+  "stage_id": "stage1-20261107",
+  "repository_files": 838,
+  "repository_bytes": 265830690,
+  "runtime_assets": 7,
+  "runtime_distribution": "GitHub Release assets",
+  "source_directory": "GitHub_repository",
+  "runtime_manifest": "GitHub_repository/archive/release_assets.csv"
+}

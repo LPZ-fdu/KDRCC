@@ -1,0 +1,10 @@
+# Local R session state
+.Rhistory
+.RData
+.Ruserdata
+# Restored full execution archives and local libraries
+**/release_assets/
+**/R_library/
+**/KDRCC_formal_20261027/
+**/*.Rcheck/
+**/~$*.docx

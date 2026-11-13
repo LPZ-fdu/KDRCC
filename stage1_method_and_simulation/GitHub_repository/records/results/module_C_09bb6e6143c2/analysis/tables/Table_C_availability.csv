@@ -1,0 +1,5 @@
+﻿"config_id","method","scenario_gf","null_count","p","planned_repetitions","completed","point_ok","interval_ok","selection_ok","interpretation_ok","interaction_ok"
+"F_8f51df1f6f2e","KDR","G1",8,16,100,100,100,100,100,100,100
+"F_8f51df1f6f2e","KDR","G1",16,24,100,100,100,100,100,100,100
+"F_8f51df1f6f2e","KDR","G1",40,48,100,100,100,100,100,100,100
+"F_8f51df1f6f2e","KDR","G1",80,88,100,100,99,99,99,99,99

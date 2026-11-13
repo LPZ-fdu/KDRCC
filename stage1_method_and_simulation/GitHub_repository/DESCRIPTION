@@ -1,0 +1,7 @@
+Project: KDR-CC simulation study
+Version: 1.0.0
+Title: Reproducible Simulation Study for Kernel-Based Doubly Robust Case-Crossover Regression
+Description: Standalone research scripts for parameter assessment, nuisance robustness, exposure-effect recovery, contribution allocation, interaction detection, exposure identification and robustness across overall exposure correlations and independent validation-based configuration selection.
+Depends: R (>= 3.6.3)
+Imports: CompQuadForm, parallel, splines
+Encoding: UTF-8

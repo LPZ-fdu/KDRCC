@@ -1,0 +1,4 @@
+﻿"config_id","null_count","p","planned_repetitions","usable_repetitions","mean_TPR","TPR_MCSE","TPR_lower","TPR_upper","mean_FPR","FPR_MCSE","FPR_lower","FPR_upper","correlation_id","correlation_label","correlation_mix","mean_absolute_correlation"
+"DH_F_8f51df1f6f2e",0,8,100,100,0.85,0.0129343720295181,0.824335399760905,0.875664600239095,,,,,"DH","High",0.846503380004136,0.85147200443956
+"DM_F_8f51df1f6f2e",0,8,100,100,0.98375,0.00458333333333333,0.974655672305229,0.992844327694771,,,,,"DM","Moderate",0.492704748699156,0.604729700766101
+"F_8f51df1f6f2e",0,8,100,100,0.99875,0.00125,0.996269728810517,1,,,,,"D0","Original (module B)",0,0.258599598393686

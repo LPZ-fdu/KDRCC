@@ -1,0 +1,3 @@
+﻿"N","L","M","kappa","lambda","config_id","correlation_id","correlation_label","target_mean","min_abs","mean_tolerance","correlation_mix"
+20000,20000,144,1e-04,1,"DM_F_8f51df1f6f2e","DM","Moderate",0.6,0.45,0.03,0.492704748699156
+20000,20000,144,1e-04,1,"DH_F_8f51df1f6f2e","DH","High",0.85,0.75,0.03,0.846503380004136

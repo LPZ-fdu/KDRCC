@@ -1,0 +1,2 @@
+"pair","statistic","p_value","accuracy","algorithm","draws","p_adjusted","selected","numerically_stable"
+"X1__X3",9.67181978124365e-06,0.24052599460865,1e-08,"Davies",0,0.24052599460865,FALSE,TRUE

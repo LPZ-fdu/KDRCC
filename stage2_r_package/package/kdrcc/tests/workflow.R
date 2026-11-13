@@ -1,0 +1,30 @@
+library(kdrcc)
+d<-kdrcc_example(360L,seed=821L,discrete=TRUE)
+sp<-kdrcc_split(d,"set_id",learning=120L,seed=822L)
+ctrl<-kdrcc_control(centers=6L,kappa=1e-3,lambda=1,kernel_tolerance=1e-4)
+nu<-kdrcc_nuisance(f_method="cells",g_df=2L,kernel_rank=3L)
+fit<-kdrcc(sp$estimation,exposures=c("X1","X2","X3"),adjust=~W+I(W^2),
+  learning_data=sp$learning,nuisance=nu,control=ctrl)
+stopifnot(inherits(fit,"kdrcc"),isTRUE(fit$diagnostics$converged),all(is.finite(coef(fit))),
+  identical(dim(vcov(fit)),c(6L,6L)))
+zero<-predict(fit,as.data.frame(as.list(fit$reference)))
+stopifnot(max(abs(zero$log_or))<1e-12,max(abs(zero$se))<1e-12)
+a<-predict(fit,sp$estimation[1:8,]);p<-tempfile(fileext=".rds");saveRDS(fit,p)
+stopifnot(identical(a,predict(readRDS(p),sp$estimation[1:8,])))
+shares<-kdrcc_contribution(fit,variables=c("X1","X2"))
+stopifnot(shares$identity_error<1e-8,abs(sum(shares$data$share_percent)-100)<1e-10)
+one<-kdrcc_contribution(fit,variables="X1")
+stopifnot(one$identity_error<1e-8,abs(one$data$share_percent-100)<1e-10)
+vt<-kdrcc_variables(fit)
+stopifnot(nrow(vt$data)==3L,all(vt$data$p_value>=0&vt$data$p_value<=1),
+  isTRUE(all.equal(vt$data$p_adjusted,p.adjust(vt$data$p_value,"holm"))))
+it<-kdrcc_interaction(fit,matrix(c("X1","X3"),1,2),points=3L)
+stopifnot(nrow(it$overall)==1L,all(is.finite(it$data$log_or)))
+stopifnot(nrow(kdrcc_single(fit,exposure="X1",points=5L)$data)==5L,
+  nrow(kdrcc_joint(fit,quantiles=c(.1,.5,.9))$data)==3L)
+set.seed(725L);rng<-.Random.seed
+invisible(kdrcc_split(d,"set_id",learning=120L,seed=51L))
+stopifnot(identical(rng,.Random.seed))
+bad<-d;bad$case[bad$set_id==1]<-0
+stopifnot(inherits(try(kdrcc(bad,exposures=c("X1","X2"),control=ctrl),silent=TRUE),"try-error"))
+unlink(p)

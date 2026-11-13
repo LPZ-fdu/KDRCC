@@ -1,0 +1,9 @@
+"check","passed"
+"Installed package version",TRUE
+"Kernel learning and final estimation",TRUE
+"Full coefficient covariance",TRUE
+"Effect prediction and intervals",TRUE
+"Variable participation tests",TRUE
+"Four-point interaction tests",TRUE
+"Exact contribution allocation",TRUE
+"Saved model prediction",TRUE

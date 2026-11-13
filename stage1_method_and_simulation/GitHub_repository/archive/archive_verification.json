@@ -1,0 +1,9 @@
+{
+  "archive_payloads_verified": 7,
+  "files_verified": 171260,
+  "bytes_verified": 8813017907,
+  "zip_crc": "passed",
+  "per_file_sha256": "passed",
+  "manifest_completeness": "passed",
+  "elapsed_seconds": 17.35
+}

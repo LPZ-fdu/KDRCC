@@ -1,0 +1,12 @@
+library(kdrcc)
+d<-kdrcc_example(480L,seed=913L)
+sp<-kdrcc_split(d,"set_id",learning=160L,seed=914L)
+fit<-kdrcc(sp$estimation,exposures=c("X1","X2","X3"),adjust=~W+I(W^2),
+ learning_data=sp$learning,nuisance=kdrcc_nuisance(f_df=2L,g_df=2L,kernel_rank=3L),
+ control=kdrcc_control(centers=6L,kappa=1e-3,lambda=1,kernel_tolerance=1e-4))
+stopifnot(fit$covariance$status=="available",all(is.finite(vcov(fit))),
+  min(eigen(vcov(fit),symmetric=TRUE,only.values=TRUE)$values)>-1e-10)
+fit0<-kdrcc(sp$estimation,exposures=c("X1","X2"),adjust=~1,
+ learning_data=sp$learning,nuisance=kdrcc_nuisance(g_df=2L,kernel_rank=3L),
+ control=kdrcc_control(centers=6L,kappa=1e-3,lambda=1,kernel_tolerance=1e-4))
+stopifnot(length(fit0$kernel$design$adjust$keep)==0L,all(is.finite(coef(fit0))))
